@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://www.donnad.it/sites/default/files/styles/r_visual_d/public/201449/Che_cosa_significa_sognare_dei_dadi.jpg?itok=fMIK6pfT");
+    background-size: 48%;
+}
+
+/*Email-utente*/
+.container{
+    margin: 0 auto;
+    background-color: lightgray;
+    width: 800px;
+    height: 300px;
+    text-align: center;
+}
+
+.container .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper h1{
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 6px;
+    font-size: 1.3em;
+    border-radius: 30px;
+}
+
+label{
+    font-size: 1.6em;
+}
+
+input{
+    width: 300px;
+    height: 28px;
+    font-size: 1.1em;
+}
+
+#messaggio-conferma{
+    background-color: green;
+    border-radius: 30px;
+    margin-top: 30px;
+    color: white;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+#messaggio-negazione{
+    background-color: red;
+    border-radius: 30px;
+    margin-top: 30px;
+    color: white;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+/*Gioco-dei-dadi*/
+.container-2{
+    margin: 0 auto;
+    background-color: lightskyblue;
+    width: 800px;
+    text-align: center;
+}
+
+.box{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.square-1{
+    height: 130px;
+    width: 150px;
+    float: left;
+    margin-right: 170px;
+}
+
+.square-1 #bg{
+    background-color: chartreuse;
+}
+
+.square-2{
+    height: 50px;
+    width: 150px;
+    float: left;
+    font-size: 1.4em;
+}
+
+.square-2#button-play{
+    color: red;
+}
+
+.square-3{
+    height: 130px;
+    width: 150px;
+    float: right;
+}
+
+.square-3 #bg{
+    background-color: chartreuse;
+}
+
+.square-4{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.square-4 .square-5{
+    background-color: red;
+    height: 100%;
+    width: 150px;
+}
+
+.square-5 #bg{
+    background-color: chartreuse;
+}
